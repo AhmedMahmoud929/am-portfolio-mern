@@ -1,0 +1,45 @@
+{
+  "homepage": "https://ahmedmahmoud929.github.io/am-portfolio-mern",
+  "name": "am-portfolio",
+  "version": "0.1.0",
+  "private": false,
+  "dependencies": {
+    "aos": "^2.3.4",
+    "axios": "^1.1.3",
+    "cra-template": "1.2.0",
+    "gh-pages": "^4.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.6.0",
+    "react-router-dom": "^6.4.2",
+    "react-scripts": "5.0.1",
+    "react-select": "^5.5.9",
+    "react-simple-typewriter": "^4.0.5"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

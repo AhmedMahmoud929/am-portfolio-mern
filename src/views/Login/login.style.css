@@ -1,0 +1,301 @@
+#auth {
+  background-image: linear-gradient(
+    45deg,
+    var(--light-bg),
+    var(--dark-bg),
+    var(--light-bg)
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 100vh;
+  overflow-x: hidden;
+}
+#auth .cont {
+  position: relative;
+}
+#auth form,
+#auth.not-found .content {
+  width: 450px;
+  background-color: var(--bg-color);
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 40px 60px;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(4px);
+  margin: auto;
+  position: relative;
+  z-index: 1;
+}
+#auth form h1 {
+  font-weight: 400;
+  text-transform: capitalize;
+  font-size: 2.2rem;
+}
+#auth form h2 {
+  font-weight: 300;
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  line-height: 28px;
+  opacity: 0.5;
+  margin: 5px 0px 30px 0px;
+}
+#auth form div.inp {
+  align-self: center;
+  display: flex;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.15);
+  width: 100%;
+}
+#auth form .inputs {
+  width: 100%;
+}
+#auth form div.inp input {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  font-size: 1.4rem;
+  padding: 15px 20px 15px 0px;
+  width: 85%;
+  color: #fff;
+}
+#auth form div.inp input::placeholder {
+  color: rgba(255, 255, 255, 0.35);
+}
+#auth form div.inp .icon {
+  font-size: 1.9rem;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#auth form div.inp.password input {
+  width: 60%;
+}
+#auth form div.inp.password {
+  margin-top: 15px;
+}
+#auth form div.inp .icon.eye {
+  font-size: 1.7rem;
+  margin-top: 2px;
+  opacity: 0.6;
+  cursor: pointer;
+}
+#auth button {
+  width: 100%;
+  padding: 15px 0px;
+  text-transform: uppercase;
+  font-size: 1rem;
+  background-image: linear-gradient(
+    -45deg,
+    var(--grad-clr-left),
+    var(--grad-clr-right)
+  );
+  border-radius: 5px;
+  transition: 0.3s;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  margin-top: 30px;
+  letter-spacing: 2px;
+}
+#auth button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+#auth form .check {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: rgba(255, 255, 255, 0.45);
+  transition: 0.3s;
+  height: auto;
+}
+#auth form .check.success {
+  color: seagreen;
+}
+#auth form p.or-form {
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: -20px;
+  color: rgba(255, 255, 255, 0.35);
+}
+#auth form p.or-form .link {
+  color: var(--white);
+  text-decoration: none;
+  margin: 0px 5px;
+}
+#auth .error {
+  background-color: rgba(172, 0, 0, 0.7);
+  max-width: 100%;
+  font-size: 1.1rem;
+  text-align: center;
+  padding: 15px 10px;
+  position: relative;
+  z-index: 2;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+/* Background */
+
+#auth img.ball {
+  position: absolute;
+  width: 220px;
+}
+#auth img.purple-ball {
+  left: -18%;
+  top: -15%;
+  animation: ball 3s infinite ease-in-out alternate-reverse;
+}
+#auth img.orange-ball {
+  animation: ball 2s infinite ease-in-out alternate-reverse;
+  right: -18%;
+  bottom: -15%;
+}
+
+@keyframes ball {
+  0% {
+    transform: translateY(30px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+.ocean {
+  height: 330px;
+  /* change the height of the waves here */
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow-x: hidden;
+}
+
+.wave {
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 88.7'%3E%3Cpath d='M800 56.9c-155.5 0-204.9-50-405.5-49.9-200 0-250 49.9-394.5 49.9v31.8h800v-.2-31.6z' fill='160A2D'/%3E%3C/svg%3E");
+  position: absolute;
+  width: 200%;
+  height: 100%;
+  animation: wave 40s -3 ease-in-out infinite;
+  transform: translate3d(0, 0, 0);
+  opacity: 0.5;
+  background-size: cover;
+}
+
+.wave:nth-of-type(1) {
+  bottom: 0;
+  animation: wave 60s -1s ease-out infinite;
+  opacity: 0;
+}
+
+.wave:nth-of-type(2) {
+  bottom: 0;
+  animation: wave 20s ease-in reverse infinite;
+  opacity: 0.1;
+}
+
+.wave:nth-of-type(3) {
+  bottom: 0;
+  animation: wave 60s -1s ease-out infinite;
+  opacity: 0.1;
+}
+
+@keyframes wave {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+/* MEDIA Q */
+@media (max-width: 500px) {
+  /* Login */
+  #auth {
+    width: 95vw;
+  }
+  #auth form {
+    width: 90%;
+    padding: 40px 20px;
+  }
+  /* Signup */
+  #auth.signup {
+    width: 100vw;
+  }
+  #auth.signup form {
+    max-height: 90vh;
+  }
+  #auth.signup form h1 {
+    font-size: 2rem;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: -10px;
+  }
+  #auth.signup form h2 {
+    display: none;
+  }
+  #auth.signup form div.inp input {
+    font-size: 1.2rem;
+    width: 90%;
+  }
+  #auth.signup form div.inp .icon {
+    font-size: 1.5rem;
+  }
+  #auth.signup form .check {
+    line-height: 20px;
+    margin-top: 5px;
+  }
+}
+
+/* ================= 404 Page ================= */
+
+/* #auth.not-found .cont .content {
+  width: 400px;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  border-radius: 15px;
+  padding: 90px 20px;
+  text-align: center;
+  position: relative;
+  z-index: 3;
+} */
+#auth.not-found .content {
+  align-items: center;
+  text-align: center;
+  padding-top: 70px;
+  padding-bottom: 60px;
+}
+
+#auth.not-found .cont h1 {
+  font-size: 8rem;
+  line-height: 1;
+}
+#auth.not-found .cont h2 {
+  font-size: 2rem;
+  line-height: 1;
+  font-weight: 400;
+  opacity: 0.8;
+  letter-spacing: 4px;
+}
+#auth.not-found .cont h3 {
+  font-weight: 300;
+  line-height: 1;
+  margin-top: 10px;
+  opacity: 0.5;
+}
+
+#auth.not-found a {
+  display: flex;
+  width: 100%;
+}

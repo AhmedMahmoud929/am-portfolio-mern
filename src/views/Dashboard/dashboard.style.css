@@ -1,0 +1,221 @@
+/* Googlefont Poppins CDN Link */
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+
+.sidebar {
+  position: fixed;
+  height: 100%;
+  width: 240px;
+  background: #120226;
+  z-index: 9;
+  transition: all 0.5s ease;
+  overflow: hidden;
+}
+.sidebar.active {
+  width: 60px;
+}
+.sidebar .logo-details {
+  height: 80px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-family: "Righteous", cursive;
+  font-size: 2rem;
+  font-weight: 500;
+}
+.sidebar .logo-details .profile-img {
+  background-color: white;
+  border: 2px solid white;
+  overflow: hidden;
+  border-radius: 100px;
+  min-width: 47px;
+  max-width: 47px;
+  height: 47px;
+  transition: 0.5s;
+  margin-left: 15px;
+}
+.sidebar.active .logo-details .profile-img {
+  margin-left: 5px;
+}
+.sidebar .logo-details .profile-img img {
+  width: 103%;
+}
+.sidebar .nav-links {
+  margin-top: 10px;
+}
+.sidebar .nav-links li {
+  position: relative;
+  list-style: none;
+  height: 80px;
+}
+.sidebar .nav-links li a {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  transition: all 0.4s ease;
+}
+.sidebar .nav-links li a.active {
+  background-image: linear-gradient(
+    -45deg,
+    var(--grad-clr-left),
+    var(--grad-clr-right)
+  );
+}
+
+.sidebar .nav-links li i {
+  min-width: 60px;
+  text-align: center;
+  font-size: 28px;
+  color: #fff;
+  margin-top: 8px;
+}
+.sidebar .nav-links li a .links_name {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  white-space: nowrap;
+}
+.sidebar .nav-links .log_out {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  cursor: pointer;
+}
+.sidebar .nav-links .log_out i {
+  transform: scale(-1) translateY(7px);
+}
+.home-section {
+  position: relative;
+  background: var(--dark-bg);
+  min-height: 100vh;
+  width: calc(100% - 240px);
+  left: 240px;
+  transition: all 0.5s ease;
+}
+.sidebar.active ~ .home-section {
+  width: calc(100% - 60px);
+  left: 60px;
+}
+/* ============ NAV ============ */
+.home-section nav {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  background: var(--light-bg);
+  display: flex;
+  align-items: center;
+  position: fixed;
+  width: calc(100% - 240px);
+  left: 240px;
+  z-index: 100;
+  padding: 0 20px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s ease;
+}
+.sidebar.active ~ .home-section nav {
+  left: 60px;
+  width: calc(100% - 60px);
+}
+.home-section nav .sidebar-button {
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+  font-weight: 500;
+}
+nav .sidebar-button i {
+  font-size: 44px;
+  margin-right: 10px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.home-section .home-content h1.main-title {
+  text-align: center;
+  margin-bottom: 15px;
+  font-weight: 500;
+  font-size: 2rem;
+}
+.home-section .home-content h2.info-title {
+  text-align: center;
+  margin: -30px auto;
+  font-weight: 100;
+  font-size: 2.3rem;
+  opacity: 0.4;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+}
+.home-section .home-content {
+  position: relative;
+  padding: 0px 30px;
+  padding-top: 104px;
+  overflow-x: hidden;
+  min-height: 100vh;
+  /* border: 2px solid palevioletred; */
+  display: flex;
+  justify-content: center;
+}
+
+/* Responsive Media Query */
+@media (max-width: 1240px) {
+  .sidebar {
+    width: 60px;
+  }
+  .sidebar.active {
+    width: 220px;
+  }
+  .home-section {
+    width: calc(100% - 60px);
+    left: 60px;
+  }
+  .sidebar.active ~ .home-section {
+    width: calc(100% - 220px);
+    overflow: hidden;
+    left: 220px;
+  }
+  .home-section nav {
+    width: calc(100% - 60px);
+    left: 60px;
+  }
+  .sidebar.active ~ .home-section nav {
+    width: calc(100% - 220px);
+    left: 220px;
+  }
+  .sidebar .logo-details .profile-img {
+    margin-left: 5px;
+  }
+}
+
+@media (max-width: 700px) {
+  nav .sidebar-button .dashboard {
+    display: none;
+  }
+  .home-section nav .profile-details {
+    height: 50px;
+    min-width: 40px;
+  }
+}
+@media (max-width: 400px) {
+  .sidebar {
+    width: 0;
+  }
+  .sidebar.active {
+    width: 60px;
+  }
+  .home-section {
+    width: 100%;
+    left: 0;
+  }
+  .sidebar.active ~ .home-section {
+    left: 60px;
+    width: calc(100% - 60px);
+  }
+  .home-section nav {
+    width: 100%;
+    left: 0;
+  }
+  .sidebar.active ~ .home-section nav {
+    left: 60px;
+    width: calc(100% - 60px);
+  }
+}

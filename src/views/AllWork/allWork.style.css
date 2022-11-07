@@ -1,0 +1,35 @@
+#portflio.all {
+  padding-top: 60px;
+}
+#portflio.all .container .top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: -10px;
+}
+
+#port-card {
+  background-color: var(--light-bg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 70px 0px;
+}
+
+#port-card h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 560px) {
+  #port-card {
+    padding: 30px 0px;
+  }
+  #port-card > div,
+  #port-card > h1 {
+    display: none;
+  }
+}

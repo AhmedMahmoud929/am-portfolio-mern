@@ -1,0 +1,199 @@
+#overview-dash {
+  width: 80%;
+  margin: 0px auto;
+  overflow-y: hidden;
+}
+#overview-dash .filter-input {
+  margin-bottom: 15px;
+  font-size: 1.4rem;
+  position: relative;
+  z-index: 9999;
+}
+#overview-dash ul .projects-rows {
+  height: 50vh;
+  overflow-y: scroll;
+  padding-right: 20px;
+}
+
+#overview-dash ul .projects-rows::-webkit-scrollbar {
+  width: 0.7em;
+  background-color: #21114193;
+}
+
+#overview-dash ul .projects-rows::-webkit-scrollbar-thumb {
+  background-color: #5f3da4;
+}
+
+#overview-dash .responsive-table .table-row {
+  height: 100px;
+  padding-right: 0px;
+}
+#overview-dash .responsive-table .table-row .img-loader {
+  transform: scale(0.75);
+  margin-top: -25px;
+  margin-left: -8px;
+}
+#overview-dash .responsive-table li {
+  border-radius: 3px;
+  padding: 10px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+#overview-dash .responsive-table .table-header {
+  background-color: #5f3da4;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  margin-top: -5px;
+  margin-bottom: 15px;
+  padding: 25px 30px;
+  font-size: 1rem;
+}
+#overview-dash .responsive-table .table-row {
+  background-color: #ffffff33;
+  box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
+}
+#overview-dash .responsive-table .col-1 {
+  flex-basis: 20%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+#overview-dash .responsive-table .col-2 {
+  flex-basis: 25%;
+}
+#overview-dash .responsive-table .col-2 .icon {
+  margin: auto;
+}
+#overview-dash .responsive-table .icon {
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+#overview-dash .responsive-table .col-4 .icon:nth-child(1) {
+  border-radius: 50% 0px 0px 50%;
+}
+#overview-dash .responsive-table .col-4 .icon:nth-child(2) {
+  border-radius: 0px;
+}
+#overview-dash .responsive-table .col-4 .icon:nth-child(3) {
+  border-radius: 0px 50% 50% 0px;
+}
+#overview-dash .responsive-table .icon .i {
+  z-index: 2;
+  transition: 0.3s;
+}
+
+#overview-dash .responsive-table .icon:before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  height: 100%;
+  width: 100%;
+  /* border-radius: 50%; */
+  background-image: linear-gradient(
+    -45deg,
+    var(--grad-clr-left),
+    var(--grad-clr-right)
+  );
+  z-index: 1;
+  opacity: 0;
+  transition: 0.3s;
+}
+#overview-dash .responsive-table .icon:hover .i {
+  transform: scale(1.2);
+}
+#overview-dash .responsive-table .icon:hover:before {
+  opacity: 1;
+}
+#overview-dash .responsive-table .col-3 {
+  flex-basis: 25%;
+}
+#overview-dash .responsive-table .table-row .col-3 {
+  font-size: 1.4rem;
+  line-height: 25px;
+}
+
+#overview-dash .responsive-table .col-4 {
+  flex-basis: 30%;
+  display: flex;
+  justify-content: center;
+}
+
+#overview-dash .responsive-table .col-1 img {
+  height: 80px;
+}
+
+/* Project Preview */
+#project-preview {
+  position: fixed;
+  top: 100px;
+  left: -100%;
+  width: 80%;
+  height: 80%;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  z-index: 10000;
+  padding: 30px 40px;
+  transition: 0.7s;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  overflow: hidden;
+}
+#project-preview .image {
+  height: 70vh;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  padding: 10px;
+}
+#project-preview .image img {
+  height: 100%;
+}
+#project-preview .exit-icon {
+  font-size: 2rem;
+  position: absolute;
+  right: 30px;
+  top: 20px;
+  cursor: pointer;
+}
+
+#project-preview.vesible {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media (max-width: 900px) {
+  #overview-dash .responsive-table .table-header {
+    display: none;
+  }
+  #overview-dash .responsive-table li {
+    display: block;
+  }
+  #overview-dash .responsive-table .col {
+    flex-basis: 100%;
+    display: flex;
+    padding: 10px 0;
+    justify-content: center;
+  }
+  #overview-dash .responsive-table .col:before {
+    color: #6c7a89;
+    padding-right: 10px;
+    content: attr(data-label);
+    flex-basis: 50%;
+    text-align: right;
+  }
+}

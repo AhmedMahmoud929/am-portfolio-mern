@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap");
+:root {
+  --dark-bg: #160a2d;
+  --light-bg: #211141;
+  --grad-clr-left: #4937f0;
+  --grad-clr-right: #9244f0;
+  --grad2-clr-left: #eeb378;
+  --grad2-clr-right: #b35ed3;
+  --white: #ffffff;
+  --purple-star: #a141f2;
+  --orange-star: #f67f03;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  color: var(--white);
+}
+
+body {
+  font-family: "Cairo", sans-serif;
+  position: relative;
+  overflow-x: hidden;
+  background-color: var(--dark-bg);
+}
+
+::selection {
+  color: var(--white);
+  background: var(--grad-clr-left);
+}
+
+.container {
+  width: 70%;
+  margin: auto;
+  padding: 40px 0px;
+}
+
+#orangeStar {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--orange-star);
+  filter: blur(2px);
+  box-shadow: 0px 0px 8px 0px var(--orange-star);
+}
+
+#purpleStar {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--purple-star);
+  filter: blur(2px);
+  box-shadow: 0px 0px 8px 0px var(--purple-star);
+}
+
+body::-webkit-scrollbar {
+  width: 1em;
+  background-color: #110726;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #4b2399;
+  box-shadow: 0px 0px 30px 30px #4b2399;
+}
+
+/* Select Input */
+
+.css-b62m3t-container {
+  width: 100%;
+}
+.css-14el2xx-placeholder {
+  padding-left: 10px;
+}

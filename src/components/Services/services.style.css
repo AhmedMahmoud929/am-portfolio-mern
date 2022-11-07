@@ -1,0 +1,337 @@
+#services {
+  background-color: var(--light-bg);
+  overflow: hidden;
+  position: relative;
+}
+
+#services .container {
+  min-height: 100vh;
+  width: 100%;
+  padding: 50px 0px 150px;
+}
+
+#services .container .title {
+  text-align: center;
+  font-size: 2.8rem;
+}
+
+#services .container .servs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 110px;
+  margin-top: 6rem;
+  width: 100%;
+}
+
+#services .container .servs .ser {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#services .container .servs .ser .main {
+  width: 40vw;
+  height: 40vh;
+  position: relative;
+}
+
+#services .container .servs .ser .main .bg {
+  width: 100%;
+  height: 100%;
+  border: 0.2px solid #fff;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0px 35px 0 rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+#services .container .servs .ser .main .lap {
+  width: 330px;
+  z-index: 999;
+}
+
+#services .container .servs .ser .main #ball1 {
+  position: absolute;
+  width: 190px;
+  top: -20%;
+  right: -15%;
+  animation: purpBall1 2s infinite ease-in-out alternate;
+}
+
+@keyframes purpBall1 {
+  to {
+    top: -20%;
+  }
+  from {
+    top: -14%;
+  }
+}
+
+#services .container .servs .ser .main .label {
+  position: absolute;
+  width: 320px;
+  height: 180px;
+  bottom: -13%;
+  left: -30%;
+  background-image: linear-gradient(
+    -45deg,
+    var(--grad-clr-left),
+    var(--grad-clr-right)
+  );
+  border-radius: 20px;
+  box-shadow: 0 0px 35px 0 rgba(0, 0, 0, 0.2);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 16px;
+}
+
+#services .container .servs .ser .main #label3 {
+  position: absolute;
+  top: 5%;
+  left: -30%;
+  background-image: linear-gradient(
+    45deg,
+    var(--grad-clr-left),
+    var(--grad-clr-right)
+  );
+}
+
+#services .container .servs .ser .main #label2 {
+  position: absolute;
+  top: 5%;
+  left: 80%;
+  background-image: linear-gradient(
+    45deg,
+    var(--grad2-clr-left),
+    var(--grad2-clr-right)
+  );
+}
+
+#services .container .servs .ser .main .label h1 {
+  font-size: 2rem;
+}
+
+#services .container .servs .ser .main .label p {
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 17px;
+  opacity: 0.8;
+}
+
+#services .container .servs .ser .main .label .btns {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+#services .container .servs .ser .main .label .btns span {
+  padding: 0px 15px;
+  outline: 2px solid #fff;
+  border-radius: 5px;
+  font-weight: 500;
+  position: relative;
+  z-index: 1;
+  transition: 0.3s;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+#services .container .servs .ser .main .label .btns span::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #fff;
+  width: 0%;
+  border-radius: 0px 35px 35px 0px;
+  height: 100%;
+  transition: 0.4s;
+  z-index: -1;
+}
+
+#services .container .servs .ser .main .label .btns span:hover:before {
+  width: 100%;
+  border-radius: 5px;
+}
+
+#services .container .servs .ser .main .label .btns span:hover {
+  color: #211141;
+  transform: scale(1.1);
+  outline-color: transparent;
+  font-weight: 700;
+}
+
+#services .container .servs .ser .main #ball2 {
+  position: absolute;
+  width: 200px;
+  bottom: -18%;
+  left: -15%;
+  animation: orangeBall 2s infinite ease-in-out alternate;
+}
+
+@keyframes orangeBall {
+  to {
+    bottom: -20%;
+  }
+  from {
+    bottom: -14%;
+  }
+}
+
+#services .container .servs .ser .main #ball3 {
+  position: absolute;
+  width: 190px;
+  bottom: -18%;
+  right: -15%;
+  animation: purpBall 2s infinite ease-in-out alternate;
+}
+
+@keyframes purpBall {
+  to {
+    bottom: -20%;
+  }
+  from {
+    bottom: -14%;
+  }
+}
+
+/* stars */
+
+#services .str1 {
+  top: 3%;
+  left: 40%;
+  width: 8px;
+  height: 8px;
+}
+
+#services .str2 {
+  top: 65%;
+  left: 90%;
+  width: 8px;
+  height: 8px;
+}
+
+#services .str4 {
+  top: 43%;
+  left: 8%;
+  animation: servicesStr4 2s infinite ease-in-out alternate;
+}
+
+@keyframes servicesStr4 {
+  from {
+    top: 43%;
+  }
+  to {
+    top: 45%;
+  }
+}
+
+#services .str5 {
+  top: 87%;
+  left: 7%;
+  animation: servicesStr5 2s infinite ease-in-out alternate;
+}
+
+@keyframes servicesStr5 {
+  from {
+    top: 87%;
+  }
+  to {
+    top: 90%;
+  }
+}
+
+/* MEDIA Q */
+
+@media (max-width: 1444px) {
+  #services .container .servs .ser .main {
+    width: 70vw;
+  }
+  #services .container .servs .ser .main .label,
+  #services .container .servs .ser .main #label3 {
+    left: -70px;
+  }
+  #services .container .servs .ser .main .ball {
+    right: -80px;
+  }
+}
+
+@media (max-width: 1090px) {
+  #services .container {
+    min-height: 100vh;
+    width: 100%;
+    padding: 60px 0px 300px;
+  }
+  #services .container .servs .ser .main {
+    width: 80vw;
+  }
+  #services .container .servs .ser .main .label {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    bottom: -52%;
+    height: 150px;
+  }
+  #services .container .servs .ser .main .ball {
+    right: -80px;
+  }
+  #services .container .servs {
+    gap: 300px;
+  }
+  #services .container .servs .ser .main #label3,
+  #services .container .servs .ser .main #label2 {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    top: 102%;
+    height: 150px;
+  }
+}
+
+@media (max-width: 590px) {
+  #services .container .servs .ser .main .lap {
+    width: 300px;
+  }
+  #services .container .servs .ser .main .label h1 {
+    font-size: 1.7rem;
+  }
+  #services .container .servs .ser .main .label .btns {
+    gap: 20px;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 420px) {
+  #services .container .servs .ser .main .lap {
+    width: 250px;
+  }
+  #services .container .servs .ser .main .bg {
+    height: 80%;
+  }
+  #services .container .servs .ser .main #label3,
+  #services .container .servs .ser .main #label2 {
+    top: 83%;
+  }
+  #services .container .servs .ser .main .label {
+    bottom: -32%;
+  }
+  #services .container .servs {
+    gap: 200px;
+  }
+  #services .container {
+    padding: 60px 0px 250px;
+  }
+}

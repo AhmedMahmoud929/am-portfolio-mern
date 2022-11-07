@@ -1,0 +1,93 @@
+ul {
+  list-style-type: none;
+}
+
+.items-list {
+  max-width: 90vw;
+  margin: 2rem;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 3rem;
+  justify-content: center;
+  align-content: center;
+}
+@media only screen and (max-width: 600px) {
+  .items-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.item {
+  width: 10rem;
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.item span {
+  background: #ffffff;
+  border-radius: 0.6rem;
+  padding: 2rem;
+  font-size: 3rem;
+  transition: all 0.3s ease;
+}
+.item:hover span {
+  transform: scale(1.2);
+  color: purple;
+}
+.item p {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  color: #333;
+}
+
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5rem;
+  margin: 3rem;
+  border-radius: 0.6rem;
+}
+.page-numbers,
+.page-btn,
+.page-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.8rem;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+.page-dots {
+  width: 2.6rem;
+  height: 2.6rem;
+  color: #333;
+  cursor: initial;
+}
+.page-numbers {
+  width: 2.6rem;
+  height: 2.6rem;
+  border-radius: 0.4rem;
+}
+.page-numbers:hover {
+  color: purple;
+}
+.page-numbers.active {
+  color: #ffffff;
+  background: purple;
+  font-weight: 600;
+  border: 1px solid purple;
+}
+.page-btn {
+  color: #333;
+}
+.page-btn.active {
+  color: var(--greyDark);
+  pointer-events: initial;
+}
+.page-btn.active:hover {
+  color: purple;
+}

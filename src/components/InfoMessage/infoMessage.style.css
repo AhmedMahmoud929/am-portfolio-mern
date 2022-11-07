@@ -1,0 +1,61 @@
+#InfoMessage {
+  width: 250px;
+  left: 50%;
+  opacity: 0;
+  transform: translateX(-50%);
+  z-index: 999;
+  text-align: center;
+  position: absolute;
+  top: 50px;
+  background-color: rgb(35, 171, 88);
+  padding: 5px;
+  box-shadow: 0px 0px 30px 0px rgba(20, 195, 111, 0.3);
+}
+#InfoMessage.error {
+  background-color: rgb(154, 33, 33);
+  box-shadow: 0px 0px 20px 0px rgba(171, 23, 12, 0.3);
+}
+#InfoMessage.visible {
+  animation: errorMsgVisible 3s ease-in-out forwards;
+}
+@keyframes errorMsgVisible {
+  0% {
+    opacity: 0;
+    left: 45%;
+  }
+  10% {
+    opacity: 1;
+    left: 55%;
+  }
+  20% {
+    opacity: 1;
+    left: 48%;
+  }
+  30% {
+    opacity: 1;
+    left: 52%;
+  }
+  40% {
+    opacity: 1;
+    left: 50%;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes errorMsgHidden {
+  to {
+    opacity: 0;
+  }
+}
+#InfoMessage .message {
+  padding: 10px;
+  border: 2px solid rgb(20, 195, 110);
+}
+
+#InfoMessage.error .message {
+  border: 2px solid rgb(93, 3, 3);
+}
