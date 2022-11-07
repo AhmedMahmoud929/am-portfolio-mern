@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/AhmedMahmoud929/am-portfolio-mern.git/static/css/main.cb66b8e4.css",
-    "main.js": "/AhmedMahmoud929/am-portfolio-mern.git/static/js/main.3e54adb7.js",
+    "main.js": "/AhmedMahmoud929/am-portfolio-mern.git/static/js/main.7a330480.js",
     "static/media/myLogo-purble.png": "/AhmedMahmoud929/am-portfolio-mern.git/static/media/myLogo-purble.d0a22258da65067ebaeb.png",
     "static/media/69-eye-outline.apng": "/AhmedMahmoud929/am-portfolio-mern.git/static/media/69-eye-outline.c8a8dfeb17e22d853913.apng",
     "static/media/myResume.pdf": "/AhmedMahmoud929/am-portfolio-mern.git/static/media/myResume.245efdcab5b19c548226.pdf",
@@ -34,10 +34,10 @@
     "static/media/sololearn.webp": "/AhmedMahmoud929/am-portfolio-mern.git/static/media/sololearn.9cd3da98e9af802d1429.webp",
     "index.html": "/AhmedMahmoud929/am-portfolio-mern.git/index.html",
     "main.cb66b8e4.css.map": "/AhmedMahmoud929/am-portfolio-mern.git/static/css/main.cb66b8e4.css.map",
-    "main.3e54adb7.js.map": "/AhmedMahmoud929/am-portfolio-mern.git/static/js/main.3e54adb7.js.map"
+    "main.7a330480.js.map": "/AhmedMahmoud929/am-portfolio-mern.git/static/js/main.7a330480.js.map"
   },
   "entrypoints": [
     "static/css/main.cb66b8e4.css",
-    "static/js/main.3e54adb7.js"
+    "static/js/main.7a330480.js"
   ]
 }
