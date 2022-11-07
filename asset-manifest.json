@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/am-portfolio-mern/static/css/main.cb66b8e4.css",
-    "main.js": "/am-portfolio-mern/static/js/main.8d9320b7.js",
+    "main.css": "/am-portfolio-mern/static/css/main.748c9632.css",
+    "main.js": "/am-portfolio-mern/static/js/main.1a916caa.js",
     "static/media/myLogo-purble.png": "/am-portfolio-mern/static/media/myLogo-purble.d0a22258da65067ebaeb.png",
     "static/media/69-eye-outline.apng": "/am-portfolio-mern/static/media/69-eye-outline.c8a8dfeb17e22d853913.apng",
     "static/media/myResume.pdf": "/am-portfolio-mern/static/media/myResume.245efdcab5b19c548226.pdf",
@@ -33,11 +33,11 @@
     "static/media/4.png": "/am-portfolio-mern/static/media/4.abffff0b3c0941fcb883.png",
     "static/media/sololearn.webp": "/am-portfolio-mern/static/media/sololearn.9cd3da98e9af802d1429.webp",
     "index.html": "/am-portfolio-mern/index.html",
-    "main.cb66b8e4.css.map": "/am-portfolio-mern/static/css/main.cb66b8e4.css.map",
-    "main.8d9320b7.js.map": "/am-portfolio-mern/static/js/main.8d9320b7.js.map"
+    "main.748c9632.css.map": "/am-portfolio-mern/static/css/main.748c9632.css.map",
+    "main.1a916caa.js.map": "/am-portfolio-mern/static/js/main.1a916caa.js.map"
   },
   "entrypoints": [
-    "static/css/main.cb66b8e4.css",
-    "static/js/main.8d9320b7.js"
+    "static/css/main.748c9632.css",
+    "static/js/main.1a916caa.js"
   ]
 }
